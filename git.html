@@ -19,7 +19,7 @@
     </div>
         
     <details name="info">
-        <summary> ¿Que es un control de versiones</summary>
+        <summary> ¿Que es un control de versiones?</summary>
         <p>Un control de versiones es un sistema que registra cada cambio que se realiza
             en el código fuente de un proyecto. Esto te permite tener un histórico de todos los
             cambios producidos en sus ficheros, saber quién lo hizo y cuándo.
@@ -33,5 +33,92 @@
         <p>Git es un sistema distribuido de control de versiones, gratuito y de código abierto diseñado por Linus Torvalds, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente.</p>
 
     </details>
+    <details name="info">
+        <summary> ¿Que es un repositorio?</summary>
+        <p>Un repositorio es una carpeta en la que se almacenan las diferentes versiones de los ficheros de un proyecto y el historico de los cambios que se han realizado en ellos.</p>
+        <div><img src="img/reposi.jpg" class="repo">
+        </div>
+        <p>REPOSITORIO LOCAL: Es un contenedor de archivos que se encuentra en tu ordenador. Éste puede tener un proyecto lleno de diferentes archivos y es allí donde vas haciendo tus modificaciones y guardardolas para así, ir creando varias versiones.</p>
+        <p>REPOSITORIO REMOTO: son versiones de tu proyecto que están hospedadas en Internet o en cualquier otra red. Puedes tener varios de ellos, y en cada uno tendrás generalmente permisos de solo lectura o de lectura y escritura.</p>
+    </details>
+    <details name="info">
+        <summary>¿Qué es GITHUB?</summary>
+        <p> es una plataforma donde puedes almacenar, compartir y trabajar junto con otros usuarios para escribir código.</p>
+        <div><img src="img/gitbu.jpg" class="git">
+        </div>
+    </details>
+    <details name="info">
+        <summary>¿Qué es una rama en GIT y para qué sirve?</summary>
+       <div><img src="img/rama.webp" class="rama">
+       </div> 
+        <p>Que es: Una rama es simplemente una versión de la colección de directorios y archivos del
+            repositorio. Cada vez que se crea una nueva rama, se crea una copia de la colección
+            de archivos actual.</p>
+            <p>Para que sirve: desarrollar características, corregir errores, o experimentar con seguridad las ideas nuevas en un área contenida de tu repositorio.</p>
+    </details>
+    <details name="info">
+        <summary>¿Cuáles son los estados en GIT?</summary>
+       <div><img src="img/estados.png" class="estados">
+       </div> 
+       <P>Los estados de Git son 3:</P>
+        <p>1. modificado (modified): El archivo contiene cambios pero todavía no han sido
+            marcados para ser confirmados. Se encuentra en el directorio de trabajo.</p>
+        <p>2. preparado (staged): Son los archivos que han sido modificados en el directorio
+            de trabajo y se han marcado como preparados para ser confirmados en el
+            repositorio local. Se encuentran en un área temporal transitoria. Esta acción
+            recibe el nombre de add.</p>
+        <p>3. confirmado (committed): El archivo se encuentra grabado en el repositorio
+            local. Esta acción recibe el nombre de commit.</p>
+    </details>
+    <details name="info">
+        <summary>¿Qué es la terminal, consola o línea de comandos y para qué sirve?</summary>
+        <p>la linea de comandos GIT es la interfaz más básica que se puede usar para trabajar con Git, pero también es la única que te ofrece las más complejas y completas funcionalidades de control. Además, sólo esta interfaz es completamente universal e independiente de la plataforma, del sistema operativo y de los editores de texto, también conocidos como IDE. </p>
+        <p> sirve para ejecutar programas y scripts directamente desde el sistema operativo, crear, mover, copiar, renombrar y eliminar archivos de manera eficiente, Permite realizar configuraciones y ajustes en el sistema operativo que pueden no estar disponibles a través de una interfaz gráfica.</p>
+    </details>
+    <details name="info">
+        <summary>Funcionamiento de los siguientes comandos</summary>
+        <ul>
+            <li>LS: nos permite ver el contenido del directorio de trabajo actual.</li>
+            <li>CD: Este comando nos permite cambiar de carpeta</li>
+            <li>CD ..:nos permite regresar al directorio o carpeta anterior.</li>
+            <li>PWD:nos muestra la carpeta actual en la que nos encontramos.</li>
+            <li>MKDIR (NOMBRE):nos permite crear carpetas</li>
+            <li>TOUCH (NOMBRE):nos permite crear archivos nuevos</li>
+            <li>RM (NOMBRE):me permite eliminar la carpeta y los archivos dentro de ella de forma recursiva.</li>
+            <li>CP (NOMBRE) (DIRECTORIO):nos permite copiar un archivo.</li>
+            <li>MV (NOMBRE) (DIRECTORIO):nos permite mover un archivo.</li>
+        </ul>
+    </details>
+    <details name="info">
+        <summary>Listado con el nombre y el funcionamiento de los comandos vistos en la sesión
+            de clase de GIT.</summary>
+            <ul>
+                <li>git --version: Muestra la versión de Git que está instalada actualmente en tu sistema.</li>
+                <li>git init: Inicializa un nuevo repositorio de Git en el directorio actual. Esto crea un subdirectorio .git que contiene todos los archivos necesarios para el control de versiones.</li>
+                <li>git config user. name: Establece el nombre de usuario para el repositorio actual. Se utiliza para asociar los commits con tu nombre.</li>
+                <li>git config --global user.name "........": Establece el nombre de usuario a nivel global para todos los repositorios. Esto generalmente se hace una vez y se aplica a todos los proyectos en tu máquina.</li>
+                <li>git config user.email: Establece el correo electrónico del usuario para el repositorio actual, asociando los commits con tu correo.</li>
+                <li>git git config --global user.email ".......": Establece el correo electrónico del usuario a nivel global para todos los repositorios, similar a establecer el nombre de usuario global.</li>
+                <li>git clone: Crea una copia de un repositorio de Git existente, generalmente desde un servidor remoto, en un nuevo directorio en tu máquina local.</li>
+                <li>git add index .html: Agrega el archivo index.html al área de preparación (staging area), preparándolo para un commit.</li>
+                <li>git add . : Agrega todos los archivos modificados en el directorio actual al área de preparación. El punto (.) indica que todos los cambios deben ser preparados.</li>
+                <li>git status: Muestra el estado del directorio de trabajo y el área de preparación, incluyendo cualquier cambio que se haya preparado para el commit, cambios que no se han preparado y archivos que no están siendo rastreados por Git.</li>
+                <li>git commit -m "......": Hace un commit de los cambios en el área de preparación al repositorio con un mensaje que describe los cambios. El mensaje se especifica después del argumento -m.</li>
+                <li>git log: Muestra un registro de todos los commits realizados en el repositorio, mostrando los commits, autores, fechas y mensajes de los commits.</li>
+         </ul>
+         <p>para crear cuenta en git hub</p>
+         <ul>
+            <li>git init: Inicializa un nuevo repositorio de Git</li>
+            <li>git add README.md: Agrega el archivo README.md al área de preparación, preparándolo para un commit.</li>
+            <li>git commit -m "....": Hace un commit de los cambios preparados con un mensaje descriptivo.</li>
+         </ul>
+         <p>para subir documentos</p>
+         <ul>
+            <li>git branch -M main: Cambia el nombre de la rama actual a main. Esto se hace a menudo para seguir la convención de usar "main" como el nombre de la rama principal en lugar de "master."</li>
+            <li>git remote add origin "https......": Agrega un repositorio remoto llamado origin con la URL especificada. Esta URL es típicamente la ubicación de tu repositorio en GitHub.</li>
+            <li>git push -U origin main: Empuja la rama local main al repositorio remoto en origin y establece origin como el upstream para la rama main. La opción -U significa --set-upstream, lo que implica que futuros push y pull por defecto usarán este remoto y rama.</li>
+         </ul>
+    </details>
+
 </body>
 </html>
